@@ -4,7 +4,11 @@
   "description": "smart utils web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d build",
+    "lint": "eslint src/**; exit 0",
+    "lint:watch": "esw -w lib/**",
+    "prepublish": "npm run build",
+    "prepare":"npm run build"
   },
   "author": "TW",
   "license": "ISC",
@@ -23,13 +27,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "styled-components": "^3.4.6"
-  },
-
-  "scripts": {
-    "build": "babel src -d build",
-    "lint": "eslint src/**; exit 0",
-    "lint:watch": "esw -w lib/**",
-    "prepublish": "npm run build"
+    "styled-components": "^3.4.6",
+    "webpack": "^2.2.1"
   }
 }
