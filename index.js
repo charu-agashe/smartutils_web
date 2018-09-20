@@ -1,6 +1,6 @@
 import {
     Button
-} from './src'
+} from './build'
 
 module.exports = {
     Button

@@ -2,7 +2,7 @@
   "name": "smartutils_web",
   "version": "1.0.0",
   "description": "smart utils web",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "babel src -d build",
     "lint": "eslint src/**; exit 0",
